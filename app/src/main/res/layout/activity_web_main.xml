@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:anroid="http://schemas.android.com/apk/res/android"
+    anroid:layout_width="match_parent"
+    anroid:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/tools"
+    anroid:orientation="vertical">
+
+
+    <LinearLayout
+        anroid:layout_width="match_parent"
+        anroid:orientation="horizontal"
+        anroid:background="@color/colorPrimary"
+        anroid:layout_height="60dp">
+
+        <LinearLayout
+            anroid:id="@+id/backbutton"
+            anroid:layout_width="40dp"
+            anroid:orientation="horizontal"
+            anroid:gravity="center"
+            anroid:layout_height="match_parent">
+
+            <ImageView
+                anroid:layout_width="15dp"
+                anroid:layout_height="15dp"
+                anroid:src="@drawable/back"
+
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            anroid:id="@+id/teletext"
+            anroid:layout_width="wrap_content"
+            anroid:layout_height="wrap_content"
+            anroid:text="Whats Web"
+            anroid:layout_gravity="center_vertical"
+            anroid:layout_marginStart="20dp"
+            anroid:textColor="@color/white"
+            anroid:textSize="20sp"
+            anroid:textStyle="bold"
+            />
+
+        <ImageView
+            anroid:id="@+id/UnblockedKeyboard"
+            anroid:layout_width="30dp"
+            anroid:layout_height="40dp"
+            anroid:src="@drawable/unblock_keyboard"
+            anroid:layout_gravity="center_vertical"
+            anroid:layout_marginStart="20dp"
+            />
+
+
+        <ImageView
+            anroid:id="@+id/Blockedkeyboard"
+            anroid:layout_width="30dp"
+            anroid:layout_height="40dp"
+            anroid:visibility="gone"
+            anroid:src="@drawable/block_keyboard"
+            anroid:layout_gravity="center_vertical"
+            anroid:layout_marginStart="20dp"
+            />
+
+
+        <TextView
+            anroid:id="@+id/how_it_works"
+            anroid:layout_width="95dp"
+            anroid:layout_height="30dp"
+            anroid:text="How it works"
+            anroid:layout_gravity="center_vertical"
+            anroid:layout_marginStart="20dp"
+            anroid:gravity="center"
+            anroid:textSize="15sp"
+            anroid:textColor="@color/colorPrimary"
+            anroid:background="@drawable/how_it_works"
+            anroid:textStyle="bold"
+
+            />
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        anroid:layout_above="@+id/adview"
+        anroid:id="@+id/top"
+        anroid:layout_width="match_parent"
+        anroid:layout_height="match_parent"
+
+        anroid:gravity="center">
+
+
+        <ProgressBar
+            anroid:id="@+id/progressBar"
+            anroid:layout_width="wrap_content"
+            anroid:layout_height="wrap_content"
+            anroid:layout_gravity="center"
+            anroid:visibility="gone"
+            anroid:background="@drawable/progres" />
+
+        <WebView
+            anroid:id="@+id/webViewscan"
+            anroid:layout_width="match_parent"
+            anroid:layout_height="match_parent" />
+    </RelativeLayout>
+
+
+    <com.mopub.mobileads.MoPubView
+        anroid:id="@+id/adview"
+        anroid:layout_width="match_parent"
+        anroid:layout_height="50dp"
+        anroid:layout_alignParentBottom="true"
+        app:moPubAdSize="match_view" />
+
+
+
+
+</RelativeLayout>

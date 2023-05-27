@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.godthablab.wtracker.ParentalControl.SettingsActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    app:popupTheme="@style/AppTheme.PopupOverlay" >
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_marginStart="70dp"
+
+
+                            android:textSize="20dp"
+                            android:textColor="@android:color/white"
+                            android:text="Settings">
+
+                        </TextView>
+
+                    </LinearLayout>
+                </androidx.appcompat.widget.Toolbar>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_dark_button"
+                android:layout_margin="10dp"
+                android:elevation="15dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_dark_button"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/white"
+                            android:text="ID">
+
+                        </TextView>
+                        <TextView
+                            android:id="@+id/userId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1234567890"
+                            android:textColor="@android:color/white"
+                            android:textSize="16dp"
+                            android:layout_marginLeft="20dp">
+
+                        </TextView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right|center">
+                            <ImageView
+                                android:id="@+id/copyClipboard"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:src="@drawable/copyclipboard_icon">
+
+                            </ImageView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/subcribePanel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:elevation="10dp"
+                        app:cardCornerRadius="12dp"
+                        android:visibility="visible"
+                        app:cardElevation="10dp">
+
+
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:id="@+id/dialog_get_premium"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:background="@color/colorPrimary2"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:layout_marginLeft="10dp"
+                                android:src="@drawable/getpremium_icon">
+
+                            </ImageView>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_gravity="center">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Get "
+                                    android:textSize="18dp"
+                                    android:textColor="@color/colorWhite">
+
+                                </TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Premium"
+                                    android:textColor="@color/colorWhite"
+                                    android:textStyle="bold"
+                                    android:textSize="18dp">
+
+                                </TextView>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+
+                    <!--GET premium-->
+
+                    <LinearLayout
+                        android:id="@+id/subscribedPanel"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            >
+
+                        </ImageView>
+
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:id="@+id/planName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textSize="16dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorWhite">
+
+                            </TextView>
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:elevation="15dp"
+                                app:cardCornerRadius="15dp"
+                                app:cardElevation="15dp"
+                                >
+                                <TextView
+                                    android:id="@+id/renewDate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/colorPrimary2"
+                                    android:text=""
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="14dp">
+
+                                </TextView>
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--GET premium finish-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Settings"
+                        android:textSize="18dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold">
+
+                    </TextView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Online Notification"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_marginLeft="10dp">
+
+                        </TextView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right|center">
+                            <Switch
+                                android:id="@+id/onlineNotification"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </Switch>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Offline Notification"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_marginLeft="10dp">
+
+                        </TextView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right|center">
+                            <Switch
+                                android:id="@+id/offlineNotification"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </Switch>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Notification Sound"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_marginLeft="10dp">
+
+                        </TextView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right|center">
+                            <ImageButton
+                                android:id="@+id/notificationSound"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:background="@null"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/icon_setting2">
+
+                            </ImageButton>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:visibility="visible">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="28dp"
+                            android:src="@drawable/vibrationimg">
+
+                        </ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Vibrate On Notification"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_marginLeft="10dp">
+
+                        </TextView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right|center">
+                            <Switch
+                                android:id="@+id/vibrateNotification"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </Switch>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/bg_dark_button"
+                android:elevation="10dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp">
+                <Button
+                    android:id="@+id/contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Us"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp"
+                    android:background="@drawable/bg_dark_button"
+                    >
+
+                </Button>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:elevation="10dp"
+                android:background="@drawable/bg_dark_button"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp">
+
+                <Button
+                    android:id="@+id/thanks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thanks Us"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18dp"
+                    android:background="@drawable/bg_dark_button"
+                    >
+
+                </Button>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/banner_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <com.mopub.mobileads.MoPubView
+        android:id="@+id/adview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#12D1C1C1"
+        app:moPubAdSize="match_view" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black">
+
+    <include layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        />
+
+    <com.myutility.whatsweb.shared.DynamicSineWaveView
+        android:id="@+id/view_sine_wave"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_fab"
+        android:layout_margin="16dp"
+        android:layout_gravity="end|bottom"
+        fab:menu_colorNormal="@color/colorPrimary"
+        fab:menu_colorPressed="@color/colorPrimaryDark"
+        fab:menu_colorRipple="@color/white"
+        >
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_size="mini"
+            android:src="@drawable/delete_btn_24dp"
+            fab:fab_colorNormal="@color/colorRed"
+            fab:fab_colorPressed="@color/colorRedDark"
+            fab:fab_colorRipple="@color/white"
+            fab:fab_label="Delete" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_size="mini"
+            android:src="@drawable/download_btn_24dp"
+            fab:fab_colorNormal="@color/colorGreen"
+            fab:fab_colorPressed="@color/colorGreenDark"
+            fab:fab_colorRipple="@color/white"
+            fab:fab_label="Download" />
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/share_white_24dp"
+            fab:fab_size="mini"
+            fab:fab_colorNormal="@color/colorYellow"
+            fab:fab_colorPressed="@color/colorYellowDark"
+            fab:fab_colorRipple="@color/white"
+            fab:fab_label="Share" />
+
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+</FrameLayout>

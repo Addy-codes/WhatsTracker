@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tab_text_size">16dp</dimen>
+    <dimen name="info_text_size">16sp</dimen>
+    <dimen name="frag_home_tile_txt_margin_tp">38dp</dimen>
+    <dimen name="row_country_txt_size">18sp</dimen>
+    <dimen name="row_tile_image">120dp</dimen>
+
+    <dimen name="home_banner_height">200dp</dimen>
+    <dimen name="home_tile_image">54dp</dimen>
+    <dimen name="home_tile_container">130dp</dimen>
+
+
+    <dimen name="buy_coin_top_margin">48dp</dimen>
+    <dimen name="total_text_coin_size">18sp</dimen>
+    <dimen name="text_coin_size">16sp</dimen>
+    <dimen name="text_coin_margin_bottom">16dp</dimen>
+    <dimen name="name_text_max_width">150dp</dimen>
+    <dimen name="home_tile_text">18sp</dimen>
+
+</resources>

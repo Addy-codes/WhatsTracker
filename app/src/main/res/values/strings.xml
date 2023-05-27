@@ -1,0 +1,211 @@
+<resources>
+
+    <string name="mobanner">b195f8dd8ded45fe847ad89ed1d016da</string>
+    <string name="interstitial_id">01d8157152874a7799db25bcb4360832</string>
+    <string name="reward">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="app_name">Whats Tracker</string>
+    <string name="complete_action">Complete action</string>
+    <string name="enterName">Enter Caller Name</string>
+    <string name="delete">DELETE</string>
+    <string name="save">SAVE</string>
+    <string name="start_restoring_messages">Start Restoring Messages</string>
+    <string name="enable_notification_access">Enable notification access</string>
+    <string name="restore_deleted_message">Restore Deleted Message</string>
+    <string name="readMessage">Read Message</string>
+    <string name="receive">Receive</string>
+    <string name="tell_your_friend">Support us by telling your friend at the end of the blank message how you did this</string>
+    <string name="backlink">Do you want to send blank messages, too? I did it with this app: https://play.google.com/store/apps/details?id=com.godthablab.wtracker</string>
+    <string name="ShareApp">Hey there! its nice app i am Using https://play.google.com/store/apps/details?id=com.godthablab.wtracker</string>
+    <string name="send">Send</string>
+    <string name="custom_text_label">Use custom text instead of a blank message</string>
+    <string name="deliveryStatus">Delivery Status</string>
+    <string name="sharewith">Share with</string>
+    <string name="myFriend">My Friend</string>
+    <string name="label_repetition">Number of repetitions:</string>
+    <string name="instruction_to_enable_notification_access">Instruction to enable notification access</string>
+    <string name="deleted_message_demo">WhatsTracker restore messages which your friends deleted after sending you.It recover by reading your notification and does not have any security or privacy issue and it only stays with you.</string>
+    <string name="my">Me</string>
+    <string name="author">Author</string>
+    <string name="details">Details</string>
+    <string name="message">Message</string>
+    <string name="editMessage">Edit Message</string>
+    <string name="editProfile">Edit Profile</string>
+    <string name="no_configuration_found">No Configuration Found</string>
+    <string name="profile">Profile</string>
+    <string name="name">Name:-</string>
+    <string name="photo">Photo:-</string>
+    <string name="enterYourName">Enter your name</string>
+    <string name="seenStatus">Seen Status</string>
+    <string name="online">Online:-</string>
+    <string name="typing">Typing:-</string>
+    <string name="status">Status:-</string>
+    <string name="enterYourStatus">Enter your status</string>
+    <string name="getStart">Get Started</string>
+    <string name="tagLine">Swipe and Get New Feature in This App</string>
+    <string name="wallpaper">Wallpaper</string>
+    <string name="defaults">DEFAULT</string>
+    <string name="gallery">Gallery</string>
+    <string name="today">TODAY</string>
+    <string name="userName">USER NAME</string>
+    <string name="typeMessage">Type a message </string>
+    <string name="chatText">Chat Text</string>
+    <string name="to">To</string>
+    <string name="emoji">Emoji</string>
+    <string name="transform">Transform</string>
+    <string name="copy">Copy</string>
+    <string name="clear">Clear</string>
+    <string name="share">Share</string>
+    <string name="repeatText">Repeat Text</string>
+    <string name="noOfRepeatText">Number of Repeat Text</string>
+    <string name="repeat">Repeat</string>
+    <string name="newLineOn">New Line On</string>
+     <string name="cleanSuccess">Clean Successfully</string>
+    <string name="walkNChatInstruction">This feature will set the background layer of the camera in realtime with lesser opacity. Using this app you can see what is going on behind you while chatting with friends.</string>
+    <string name="openWhatsapp">Open WhatsApp</string>
+    <string name="shakeToOpenWhatsapp">Shake to Open WhatsApp</string>
+    <string name="shakeToOpenWhatsappEnable">Enable this feature to access WhatsApp by shaking your Phone anywhere, anytime!</string>
+    <string name="shakeInfo">This is just a simple feature allows you to access WhatsApp with a quick shortcut. Just shake your Phone to perform this shortcut. Please note it takes 3–4 second to work if you are using at the Home Screen!</string>
+    <string name="directChatInfo">This Application uses WhatsApp services to start a conversation with any number included.</string>
+    <string name="directChatInfoNote">Note: it Does not store the number</string>
+    <string name="enterMessage">Enter Message </string>
+    <string name="enterNumber">Enter Number</string>
+    <string name="sends">SEND</string>
+    <string name="newChat">New Chat</string>
+    <string name="voiceCall">VOICE CALL</string>
+    <string name="donaldTrump">Donald Trump</string>
+    <string name="callTime">00 : 30</string>
+    <string name="picture_description">Description</string>
+    <string name="picture_title">Title</string>
+
+    <string-array name="cleaner">
+        <item>Images</item>
+        <item>Videos</item>
+        <item>Audios</item>
+        <item>Voices</item>
+        <item>GIF</item>
+        <item>Documents</item>
+        <item>Profile Photos</item>
+        <item>Database</item>
+    </string-array>
+
+    <string name="continue_name">Continue</string>
+    <string name="thanks">Say Thanks</string>
+    <string name="report_problem">Report Problem</string>
+    <string name="credits">Created with &#10084;and passion\nby us</string>
+
+    <string name="share_text">Found this application checkout : </string>
+    <string name="please_wait" >Please wait…</string>
+    <string name="database_delete_message">Are you sure you want to delete database?</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="database_deleted">Database deleted</string>
+    <string name="main_database_msg">Ignoring main database file</string>
+    <string name="title_whats_web">Whats Web</string>
+    <string name="title_status_saver">Status Saver</string>
+    <string name="gallery1">Gallery</string>
+    <string name="title_gallery">Gallery</string>
+    <string name="title_whats_cleaner">Whats Cleaner</string>
+    <string name="title_direct_chat">Direct Chat</string>
+    <string name="title_remove_ads">Remove Ads</string>
+    <string name="title_profile_tracker">Profile Tracker</string>
+    <string name="no_item">No item selected</string>
+    <string name="empty_msg_status">No status found.First you need\nto watch status in WhatsApp\nthen open in this app.</string>
+    <string name="terms_n_conditons_message">"By clicking continuing, you agree to our\n<a href="com.myutility.whatsweb://privacyPolicy">Privacy Policy</a> &amp; <a href="com.myutility.whatsweb://termsAndConditions">Terms Of Use</a>"</string>
+    <string name="total_coins">Total Coins</string>
+    <string name="buy_100">Buy 100 Coins</string>
+    <string name="buy_10k">Buy 10,000 Coins</string>
+
+
+    <!--StartAppAds-->
+    <string name="start_app_banner_ad">ApplicationID</string>
+    <string name="coin_low_message">"You does not have 100 Coins, Earn some coin and try again."</string>
+
+    <string name="images">IMAGES</string>
+    <string name="track_number">Track Number</string>
+    <string name="status_saver">Status Saver</string>
+    <string name="whats_cleaner">Whats cleaner</string>
+    <string name="whats_tracker_app_conversation_this_is_used_to_test_error_in_app_management">Whats Tracker App Conversation. This Is used to Test Error In App Management</string>
+
+
+  <!--  String of Restored Deleted Messages-->
+    <string name="pref_one_hour">  1 hour</string>
+    <string name="pref_two_hour">  2 hours</string>
+    <string name="pref_four_hours">  4 hours</string>
+    <string name="pref_eight_hours">  8 hours</string>
+    <string name="pref_sixteen_hours">16 hours</string>
+    <string name="pref_one_day">   1 day</string>
+    <string name="pref_two_days">   2 days</string>
+    <string name="pref_four_days">   4 days</string>
+    <string name="pref_one_week">   One week</string>
+    <string name="pref_two_weeks">   Two weeks</string>
+    <string name="pref_one_month">   One month</string>
+    <string name="pref_value_one_hour">1</string>
+    <string name="pref_value_two_hour">2</string>
+    <string name="pref_value_four_hours">4</string>
+    <string name="pref_value_eight_hours">8</string>
+    <string name="pref_value_sixteen_hours">16</string>
+    <string name="pref_value_one_day">24</string>
+    <string name="pref_value_two_days">48</string>
+    <string name="pref_value_four_days">96</string>
+    <string name="pref_value_one_week">168</string>
+    <string name="pref_value_two_weeks">336</string>
+    <string name="pref_value_one_month">672</string>
+    <string name="delted_all_successfully">Deleted All Successfully</string>
+    <string name="dialog_message">Welcome to AlertDialog</string>
+    <string name="dialog_title">JavatPoint Alert Dialog</string>
+    <string name="service_name">WhatsTracker</string>
+
+    <!--String Of Restored Deleted Messages Ends Here-->
+
+
+    <!--Strings of whatstools parental Control feature-->
+
+
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+
+    <!--Newtwork Error Message-->
+    <string name="network_error">Network Failure. Please try again later.</string>
+    <string name="internal_server_error">Internal Server error.</string>
+    <string name="error_fetching_result">Something went wrong. Please try again later.</string>
+    <string name="Successfully_removed">Successfully Removed!</string>
+
+    <string name="start_stracking">START TRACKING</string>
+
+    <string name="unlimited_tracking">Unlimited Tracking | Get Instant Online/Offline Notification Detailed Online/Offline Logs With Graph | 24/7 Online Support</string>
+    <string name="trackanynumber">Track Any Number For 6 Hours</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="stop_tracking">STOP TRACKING</string>
+    <string name="try_free">TRY FOR FREE</string>
+    <string name="track">Track Any NumberFor 8 Hours</string>
+    <string name="trial_expires">Your 6 hour trial period is completed. Buy a premium plan now to start uninterrupted tracking again</string>
+    <string name="internal_server_error1">internal_server_error1</string>
+    <string name="internal_server_error2">internal_server_error2</string>
+    <string name="internal_server_error3">internal_server_error3</string>
+    <string name="first_time">Thanks for installing!\nTo lock and unlock the keyboard, use the keyboard button top right. Your setting be saved.</string>
+
+
+    <!--Strings of whatstools parental Control feature-->
+
+
+
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="admob_banner_ad">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_interstial_ad">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="play_console_license">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn6iYIs36+otlYgHaBoMI6AyLJo3ghtLPCGe+pJswRvutXTy4CT4ehPrbvMyqG7vfazAVQFlyj/vcEWCuIe43jEAoM43UIINDnYR2CcsW5i2P4xa6XDmy+of6VqYv5QC+WGnUBNPRkYn3QlPBXzxCF89uyz8Pc/rcw7G+bgJFZmjebyHMUKsxDcR6BiEbopZsbZNLntflg6mQmI5zJBC77/tsRslXiTgvSAi9igroI6JHdKawSone4aWcO7BPkhOQ0dMMvq3itsUw3cxY6IkjJf5L45/ubmts1M70jMqzp5brLfGO3aQyZ3zg3Aw7l744pKHft4bHFNl1xm+aV1uCNQIDAQAB</string>
+
+
+</resources>

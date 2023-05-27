@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "517126871046",
+    "firebase_url": "https://whovisited-b3cdb.firebaseio.com",
+    "project_id": "whovisited-b3cdb",
+    "storage_bucket": "whovisited-b3cdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:517126871046:android:2343bf2cefe04be3210b87",
+        "android_client_info": {
+          "package_name": "com.godthablab.wtracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "517126871046-io0vv7l5kj6t27np7eat423osn6u6dr7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.godthablab.wtracker",
+            "certificate_hash": "e2e1fe9248b67a39e7f548f52dd43dbdabc8ffdb"
+          }
+        },
+        {
+          "client_id": "517126871046-n9te3qh1faj7dcr7kbl6r54gviuks18h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvGFlZoAoR08zp4b0aM3yB3eprWuYdZyQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "517126871046-n9te3qh1faj7dcr7kbl6r54gviuks18h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

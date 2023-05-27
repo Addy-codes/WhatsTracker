@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/relay_d"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/textViewSrNm"
+        android:layout_width="40dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="1 )"
+        android:textColor="#000"
+        android:textSize="13dp" />
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        app:riv_corner_radius="30dip"
+        android:src="@drawable/default_profile_image" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:maxWidth="@dimen/name_text_max_width"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit ="marquee_forever"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:scrollHorizontally="true"
+                android:text="Name"
+                android:textColor="#000"
+                android:textSize="13dp"
+                />
+
+
+            <TextView
+                android:id="@+id/coins1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="** 100 Coins **"
+                android:layout_marginRight="4dp"
+                android:layout_marginLeft="4dp"
+                android:textColor="@color/teal_theme_color"
+                android:textSize="13dp" />
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            >
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:text="10 Hours ago"
+                android:layout_marginRight="12dp"
+                android:textColor="#000"
+                android:textSize="13dp"
+                />
+
+
+            <TextView
+                android:id="@+id/coins2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:text="** 100 Coins **"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="12dp"
+                android:textColor="@color/teal_theme_color"
+                android:textSize="13dp"
+                />
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

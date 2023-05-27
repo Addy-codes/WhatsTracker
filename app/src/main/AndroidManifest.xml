@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.godthablab.wtracker">
+
+
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" tools:node="remove" />
+    <uses-permission android:name="com.android.vending.BILLING" /> <!-- Tracker -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+
+   <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+       android:usesCleartextTraffic="true"
+       android:networkSecurityConfig="@xml/network_security_config"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:hardwareAccelerated="false"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:exported="true"
+        android:theme="@style/Theme.WhatsTracker">
+
+       <activity android:name="com.godthablab.wtracker.FunnyMessages.FunnyMessagesActivity"
+                android:theme="@style/Theme.WhatsTrackersNoTitle" />
+
+
+
+        <activity android:name="com.godthablab.wtracker.SplashActivity"
+            android:theme="@style/Theme.WhatsTracker.NoActionBar">
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+
+
+       <receiver android:name=".MyReceiver">
+           <intent-filter>
+               <action android:name="com.dataupdate.CUSTOM_INTENT">
+               </action>
+           </intent-filter>
+       </receiver>
+
+        <activity android:name="com.godthablab.wtracker.RestoredDeletedMessages.MainActivityResDelMsg"
+            android:exported="true"
+            />
+
+        <activity
+            android:name="com.godthablab.wtracker.MainActivity"
+            android:theme="@style/Theme.WhatsTracker.NoActionBar" />
+        <activity android:name="com.godthablab.wtracker.whatsWebScan.WebActivity"
+            android:theme="@style/Theme.WhatsTrackersNoTitle"
+            />
+        <activity android:name="com.godthablab.wtracker.gallery.MainWhatsGalleryActivity"
+            android:theme="@style/Theme.WhatsTrackersNoTitle"
+            />
+
+
+       <activity android:name=".ClenerGallery.GalleryActivity2"
+           android:theme="@style/Theme.WhatsTrackersNoTitle"/>
+       <activity
+            android:name="com.godthablab.wtracker.RestoredDeletedMessages.ResDelMsgView.MainRestoreChat"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:theme="@style/Theme.WhatsTrackersNoTitle" />
+
+        <activity
+            android:name="com.godthablab.wtracker.tracker.TrackerActivity"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:theme="@style/Theme.WhatsTrackersNoTitle" />
+
+       <activity
+            android:name="com.godthablab.wtracker.RestoredDeletedMessages.ResDelMsgView.DisplayChat"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:theme="@style/MyMaterialTheme" />
+
+
+       <activity android:name="com.godthablab.wtracker.asciiFaces.AsciiFacesMainActivity" />
+
+
+
+        <activity android:name="com.godthablab.wtracker.emojiText.Texttoemoji" />
+
+        <activity
+            android:name="com.godthablab.wtracker.statusSaver.StatusSaverMainActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.godthablab.wtracker.statusSaver.RecentStoriesActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.godthablab.wtracker.whatscleaner.WhatsCleaner"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.godthablab.wtracker.statusSaver.SavedStoriesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.godthablab.wtracker.statusSaver.VideoPlayers"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="com.godthablab.wtracker.cleaner.CleanerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar"
+            />
+
+
+        <activity android:name="com.godthablab.wtracker.ClenerGallery.GalleryActivity"
+            android:screenOrientation="portrait"
+            />
+
+
+        <activity
+            android:name="com.godthablab.wtracker.CleanerViewer.GifViewer"
+            android:screenOrientation="portrait" />
+
+
+
+        <activity
+            android:name="com.godthablab.wtracker.CleanerViewer.ImageViewer"
+            android:screenOrientation="portrait" />
+
+
+
+        <activity
+            android:name="com.godthablab.wtracker.CleanerViewer.VideoViewer"
+            android:screenOrientation="portrait"
+            />
+
+
+        <activity
+            android:name="com.godthablab.wtracker.CleanerViewer.MusicViewer"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+
+            android:name="com.godthablab.wtracker.NewSaverStatus.StatusSaverActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="com.godthablab.wtracker.statusSaver.ImageViewer"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.godthablab.wtracker.statusSaver.SavedVideoPlayer"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.godthablab.wtracker.statusSaver.VideoPlayer"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="com.godthablab.wtracker.statusSaver.SavedImageViewer"
+            android:screenOrientation="portrait" />
+
+
+        <provider
+            android:name="com.godthablab.wtracker.GenericFileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <provider
+            android:name=".RestoredDeletedMessages.NotifProvider"
+            android:authorities="com.godthablab.wtracker"
+            android:readPermission="com.godthablab.wtracker.RestoredDeletedMessages.READ_DATABASE"
+            android:writePermission="com.godthablab.wtracker.RestoredDeletedMessages.WRITE_DATABASE"
+            android:exported="false" />
+
+       <service
+           android:name="com.godthablab.wtracker.RestoredDeletedMessages.NotificationListener"
+           android:label="@string/service_name"
+           android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+           <intent-filter>
+               <action android:name="android.service.notification.NotificationListenerService" />
+           </intent-filter>
+       </service>
+
+        <activity android:name="com.godthablab.wtracker.RestoredDeletedMessages.RestoredMain"
+                  android:exported="true" />
+       <activity android:name="com.godthablab.wtracker.ParentalControl.PremiumPlansctivity" />
+       <activity android:name="com.godthablab.wtracker.ParentalControl.SettingsActivity" />
+
+
+       <activity android:name=".fackChatf.MainFackChatf"
+           android:theme="@style/Theme.WhatsTrackersNoTitle"/>
+       <activity android:name=".fackChatf.Wallpaperf"
+           android:theme="@style/MyMaterialTheme"/>
+       <activity android:name=".fackChatf.UserChatf"
+           android:theme="@style/MyMaterialTheme"/>
+       <activity android:name=".fackChatf.GroupProfilef"
+           android:theme="@style/MyMaterialTheme"/>
+       <activity android:name=".fackChatf.EditMessageActivityf"
+           android:theme="@style/MyMaterialTheme"/>
+       <activity android:name=".fackChatf.EditChatUserProfilef"
+           android:theme="@style/MyMaterialTheme"/>
+       <activity android:name=".fackChatf.ChatProfilef"
+           android:theme="@style/MyMaterialTheme"/>
+       <activity android:name=".fackChatf.Callsf"
+           android:theme="@style/MyMaterialTheme"/>
+       <activity android:name=".RestoredDeletedMessages.ResDelMsgView.NotificationView" />
+       <activity android:name=".gallery.StatusSaverActivity" />
+       <activity android:name=".textRepeater.MainTextRepeater" />
+       <activity android:name=".FunnyMessages.SendEmptyMessage"
+           android:exported="true"
+           android:theme="@style/Theme.WhatsTracker.NoActionBar"
+           />
+       <activity android:name=".PrivacyPolicy" />
+       <activity android:name=".TermsOfUse" />
+       <activity android:name=".whatsWebScan.HowItWorks" />
+       <activity android:name=".ParentalControl.HomeActivity" />
+
+       <activity android:name=".InterstialAds"
+           android:exported="true"
+           />
+
+
+
+
+       <meta-data
+           android:name= "com.google.android.gms.ads.APPLICATION_ID"
+           android:value= "ca-app-pub-3940256099942544~3347511713"/>
+
+   </application>
+
+</manifest>
+
+
+   <!-- https://stackoverflow.com/questions/38727393/android-retrieving-data-from-sqlite-database-based-on-onclick-listview
+-->

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="horizontal"
+    android:padding="15dp">
+
+    <RelativeLayout
+        android:id="@+id/til_username"
+        android:layout_width="wrap_content"
+        android:background="#7E999999"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:gravity="center">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Enter Repeat Count"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:singleLine="true"
+            />
+
+
+        <EditText
+            android:id="@+id/dialog_input"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:inputType="phone"
+            android:backgroundTint="@color/colorPrimary"
+            android:singleLine="true" />
+
+    </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+

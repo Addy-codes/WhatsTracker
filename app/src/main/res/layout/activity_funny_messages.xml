@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:orientation="vertical"
+    tools:context=".FunnyMessages.FunnyMessagesActivity">
+
+
+    <LinearLayout
+
+        android:layout_above="@+id/adview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/above"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="@color/fcolorPrimary"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/backbutton"
+                    android:gravity="center"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="3dp"
+                        android:src="@drawable/back" />
+
+
+                </LinearLayout>
+
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Funny Messages"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/funnyMessages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/mainInput"
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter text here">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/mainOutput"
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Output will show here"
+                    >
+
+                </EditText>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:elevation="10dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginRight="5dp"
+                        app:cardCornerRadius="10dp">
+                        <Button
+                            android:id="@+id/copyTxtBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Copy"
+                            android:textColor="@color/white"
+                            android:background="@color/colorPrimary"
+                            >
+
+                        </Button>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:elevation="10dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginLeft="5dp"
+                        app:cardCornerRadius="10dp">
+
+
+
+                        <Button
+                            android:id="@+id/shareTxtBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/share"
+                            android:textColor="@color/white"
+
+                            android:background="@color/colorPrimary">
+
+                        </Button>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/funnyText"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:text="Stylish Messages"
+                        android:textColor="@color/white"
+                        android:elevation="5dp"
+                        android:gravity="start|center_vertical"
+                        android:paddingLeft="20dp"
+                        android:background="@drawable/stylish_btn">
+
+                    </Button>
+                    <Button
+                        android:id="@+id/flipit"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:text="Flip It"
+                        android:textColor="@color/white"
+                        android:elevation="10dp"
+                        android:gravity="start|center_vertical"
+                        android:paddingLeft="20dp"
+                        android:background="@drawable/flipit_btn">
+
+                    </Button>
+
+
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:id="@+id/repeater"
+                        android:layout_height="70dp"
+                        android:text="Text Repeater"
+                        android:textColor="@color/white"
+                        android:elevation="10dp"
+                        android:onClick="buttonClicked"
+                        android:gravity="start|center_vertical"
+                        android:paddingLeft="20dp"
+                        android:background="@drawable/repeater_btn">
+
+                    </Button>
+
+
+                    <Button
+                        android:id="@+id/emojiText"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:text="Emoji Text"
+                        android:textColor="@color/white"
+                        android:elevation="10dp"
+                        android:gravity="start|center_vertical"
+                        android:paddingLeft="20dp"
+                        android:background="@drawable/emojitxt_btn">
+
+                    </Button>
+                    <Button
+                        android:id="@+id/send_empty_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:text="Send Empty Message"
+                        android:textColor="@color/white"
+                        android:elevation="10dp"
+                        android:gravity="start|center_vertical"
+                        android:paddingLeft="20dp"
+                        android:background="@drawable/emptyssg_btn">
+
+                    </Button>
+                    <Button
+                        android:id="@+id/asciiFaces"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:text="Ascii Faces"
+                        android:textColor="@color/white"
+                        android:elevation="10dp"
+                        android:gravity="start|center_vertical"
+                        android:paddingLeft="20dp"
+                        android:background="@drawable/faces_btn">
+
+                    </Button>
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </ScrollView>
+
+
+
+
+    </LinearLayout>
+
+
+    <com.mopub.mobileads.MoPubView
+        android:id="@+id/adview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#12D1C1C1"
+        app:moPubAdSize="match_view" />
+
+
+
+
+
+</RelativeLayout>

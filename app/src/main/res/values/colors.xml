@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#007754</color>
+    <color name="colorPrimaryDark">#035B42</color>
+    -->
+
+    <color name="colorPrimary">#075E55</color>
+    <color name="colorPrimaryDark">#075E55</color>
+    <color name="colorAccent">#075E55</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#FF2067DD</color>
+    <color name="purple">#FF9938EF</color>
+    <color name="orange">#FFFF3455</color>
+    <color name="green">#FF1DB85A</color>
+    <color name="dark_green">#FF075E55</color>
+    <color name="blue_light">#FF2067DD</color>
+    <color name="purple_light">#FF8932D6</color>
+    <color name="orange_light">#FFFF3455</color>
+    <color name="green_light">#FF1AB758</color>
+    <color name="placeholder_color">#719591</color>
+    <color name="brand_red">#ffd51826</color>
+    <color name="colorPrimaryss">#ff17a878</color>
+    <color name="colorPrimaryDarkss">#ff149369</color>
+    <color name="colorPrimaryz">#F8F6F6</color>
+    <color name="default_circular_color">#ffffffff</color>
+    <color name="default_circular_progress_color">#ff17a878</color>
+    <color name="fcolorAccent">#ff000000</color>
+    <color name="fcolorPrimary">#ff006157</color>
+    <color name="fcolorPrimaryDark">#ff005047</color>
+    <color name="textcolor">#ff99a6ad</color>
+    <color name="statusTextColor">#2B2A2A</color>
+    <color name="colorRed">#ff0000</color>
+    <color name="colorRedDark">#C62828</color>
+    <color name="colorYellow">#ff9900</color>
+    <color name="colorYellowDark">#FF6F00</color>
+    <color name="colorGreen">#33cc00</color>
+    <color name="colorGreenDark">#2EA208</color>
+    <color name="teal_theme_color">#D81B60</color>
+    <color name="white_low">#98FFFFFF</color>
+    <color name="yellow">#f9dc0f</color>
+    <color name="white_secondary">#88FFFFFF</color>
+    <color name="primary_text">#000000</color>
+    <color name="secondary_text_color">#90000000</color>
+
+    <color name="side_nav_background">#eaf4fe</color>
+    <color name="grid_divider">#33000000</color>
+    <color name="colorText">#000000</color>
+    <color name="colorTextMuted">#9B9494</color>
+
+
+
+    <color name="colorPrimary2">#007754</color>
+    <color name="colorGray">#999999</color>
+    <color name="colorWhite">#ffffff</color>
+
+</resources>
